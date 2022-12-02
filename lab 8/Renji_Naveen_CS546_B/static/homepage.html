@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People Finder</title>
+  <!--<link rel="stylesheet" href="../public/main-styles.css">-->
+</head>
+
+<body>
+  <!-- page content -->
+  <header>
+  <h1>People Finder</h1>
+  </header>
+  <main>
+    <p id="home-para"> This website allows users to search through a database of people. Users can also query people using their ID and Names.
+    </p>
+    <form action="/searchpeople" method="POST" class="new-post-form">
+        <label>
+          Post Title
+          <input id="people-name" type="text" name="searchPersonName" placeholder="Search Person Name" class="full-width-input">
+        </label>
+        <button id="btn1" type="submit">Search people</button>
+      </form>
+  </main>
+</body>
+</html>

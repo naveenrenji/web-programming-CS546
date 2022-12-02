@@ -1,0 +1,48 @@
+<!-- 
+Your page should have a few basic user interface elements:
+-A header tag, with an h1 naming your site, with a title for your page
+-A footer with your name, student ID, and any other info about yourself you wish to include
+-A single unordered list with an id of results. All the arrays you have checked so far (until you refresh the page) will appear in this list as list items. Each item in the list will alternate the text colors starting with green, then red, then green, then red etc.
+
+Your page will have a form with the following:
+-A label with a for attribute referencing your input
+-A input with a name and type of text
+-A button to submit the form
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays Sorter</title>
+  <link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body>
+  <!-- page content -->
+  <header>
+    <h1>Arrays Sorter</h1>
+  </header>
+  <main>
+    <p id="home-para"> This website allows users to input unordered arrays which will be sorted on submit
+    </p>
+    <form id="myForm" method="POST" class="new-post-form">
+      <label for="inputArrays" id="formLabel">
+        Input Arrays
+        <input id="inputArrays" type="text" name="inputArrays" placeholder="Number Arrays" class="full-width-input">
+      </label>
+      <button id="btn1" type="submit">Sort</button>
+    </form>
+    <div id="error" class="error" hidden>I'm an error</div>
+    <ul id="results">
+    </ul>
+  </main>
+  <footer>
+    <p>Name: Naveen Mathews Renji Student ID: 20016323 email-ID: n3@stevens.edu</p>
+  </footer>
+  <script src='/public/js/main.js'></script>
+</body>
+
+</html>
